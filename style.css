@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.container-card {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(205, 203, 203);
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.inputLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.inputContainer {
+    position: relative;
+    height: 35px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+
+}
+
+.input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    
+
+}
+
+.label {
+    position: absolute;
+    top: -7px;
+    left: 3px;
+    padding: 0 4px;
+    background-color: white;
+    color: rgb(170, 170, 170);
+    font-size: 10px;
+    transition: 0.5s;
+    z-index: 10;
+
+
+}
+
+.input:focus {
+    border: 1px solid #11cc59;
+    
+}
+
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 10px;
+    font-weight: 600;
+    color: #11cc59;
+    
+
+
+}
+
+.submitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+    padding: 10px 0px;
+    border: none;
+    background-color: #11cc59;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 3px;
+}
